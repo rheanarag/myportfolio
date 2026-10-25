@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="assets\images\logo.svg" type="image/svg">
+  
+  <title>Rhea Mae Narag — Aspiring Frontend Developer &amp; UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Rhea Mae Narag, Junior IT student at PUP Manila. Aspiring Frontend Developer and UI/UX Designer turning ideas into human-centered digital experiences.">
+  <meta name="author" content="Rhea Mae Narag">
+
+  <!-- Google Fonts: Anton (condensed display), Archivo 125 900 (extended black), Syne, Inter (body), Caveat Brush (script), JetBrains Mono (mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@125,900&family=Caveat+Brush&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <noscript>
+    <style>
+      #id-preloader { display: none !important; }
+      body.preloader-active:not(.hero-revealed) .hero-giant-text,
+      body.preloader-active:not(.hero-revealed) .hero-greeting,
+      body.preloader-active:not(.hero-revealed) .hero-name,
+      body.preloader-active:not(.hero-revealed) .hero-buttons,
+      body.preloader-active:not(.hero-revealed) .hero-role-uiux,
+      body.preloader-active:not(.hero-revealed) .hero-role-desi,
+      body.preloader-active:not(.hero-revealed) .hero-role-gner {
+        animation: none !important;
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body id="top" class="preloader-active">
+
+  <!-- =========================================================================
+       LANYARD ID CARD PRE-LOADER / WELCOME SCREEN
+       Faithful physical recreation of assets/references/1.png
+       ========================================================================= -->
+  <aside id="id-preloader" class="id-preloader" role="dialog" aria-modal="true" aria-label="Welcome to Rhea Mae Narag Portfolio">
+    <!-- Atmospheric Blurred Background Layer -->
+    <div class="id-preloader-backdrop" aria-hidden="true">
+      <div class="id-blur-patch id-blur-pink-left"></div>
+      <div class="id-blur-patch id-blur-pink-right"></div>
+      <div class="id-blur-patch id-blur-gray"></div>
+      <!-- Blurred Ghost Typography "PORTFOLIO" matching reference -->
+      <div class="id-ghost-bg-text">PORTFOLIO</div>
+    </div>
+
+    <!-- Ambient Shadow Beneath Suspended Card -->
+    <div class="id-ambient-shadow" aria-hidden="true"></div>
+
+    <!-- Physical Suspended Lanyard & ID Card Unit -->
+    <div class="id-hanging-unit" id="id-hanging-unit">
+      <!-- Suspended Black PUP Lanyard Assembly (100% Pure CSS - Matching Reference) -->
+      <div class="id-lanyard-assembly" aria-hidden="true">
+        <!-- Converging Neck Straps extending to viewport top in realistic V-shape -->
+        <div class="id-straps-container">
+          <!-- Left Neck Strap -->
+          <div class="id-strap id-strap-left">
+            <div class="id-strap-pattern">
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+            </div>
+          </div>
+          <!-- Right Neck Strap -->
+          <div class="id-strap id-strap-right">
+            <div class="id-strap-pattern">
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+              <span class="id-strap-txt">PUP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick-Release Matte Black Plastic Buckle -->
+        <div class="id-buckle">
+          <div class="id-buckle-top"></div>
+          <div class="id-buckle-seam"></div>
+          <div class="id-buckle-body">
+            <div class="id-buckle-notch id-notch-left"></div>
+            <div class="id-buckle-notch id-notch-right"></div>
+            <div class="id-buckle-guide"></div>
+          </div>
+        </div>
+
+        <!-- Lower Drop Strap connecting buckle to hardware -->
+        <div class="id-lower-strap">
+          <div class="id-lower-strap-pattern">
+            <span class="id-strap-txt">PUP</span>
+          </div>
+        </div>
+
+        <!-- Metallic Hardware (Crimped Clamp, Swivel Barrel & Snap Hook) -->
+        <div class="id-metal-hardware">
+          <div class="id-metal-crimp"></div>
+          <div class="id-metal-swivel-unit">
+            <div class="id-metal-swivel-ring"></div>
+            <div class="id-metal-swivel-barrel"></div>
+          </div>
+          <div class="id-metal-hook-wrap">
+            <div class="id-metal-hook-ring"></div>
+            <div class="id-metal-hook-body">
+              <div class="id-metal-hook-lever"></div>
+              <div class="id-metal-hook-gate"></div>
+            </div>
+            <!-- Lower hook claw looping into card punch slot -->
+            <div class="id-metal-hook-claw"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Realistic Physical ID Card -->
+      <div class="id-card" id="id-card">
+        <!-- Punch Hole for Lanyard Clip Attachment -->
+        <div class="id-card-punch" aria-hidden="true"></div>
+
+        <!-- Top Row: Brand & ID Label -->
+        <div class="id-card-top-row">
+          <div class="id-brand-logo">rmn<span class="id-logo-dot">.</span></div>
+          <div class="id-badge-code">PORTFOLIO ID</div>
+        </div>
+
+        <!-- Centered Profile Photo with Black Border -->
+        <div class="id-photo-frame">
+          <img 
+            src="assets/images/id-profile-inner.png" 
+            alt="Rhea Mae Narag" 
+            class="id-photo-img" 
+            width="146" 
+            height="172" 
+            loading="eager" 
+            decoding="sync"
+          >
+        </div>
+
+        <!-- Greeting & Welcome Heading -->
+        <div class="id-text-group">
+          <p class="id-greeting">hey there!</p>
+          <h1 class="id-welcome-heading">WELCOME TO MY<br>PORTFOLIO</h1>
+        </div>
+
+        <!-- Thin Horizontal Divider -->
+        <div class="id-divider" aria-hidden="true"></div>
+
+        <!-- Enter Button -->
+        <div class="id-btn-wrapper">
+          <button type="button" id="id-enter-btn" class="id-enter-btn" aria-label="Enter to open portfolio">
+            ENTER TO OPEN
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       GLOBAL FIXED NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="site-header" role="banner">
+    <!-- Brand Logo "rmn." -->
+    <a href="#home" class="brand-logo" aria-label="Rhea Mae Narag Homepage">
+      rmn<span class="logo-dot"></span>
+    </a>
+
+    <!-- Pill Navigation (majority order: Home, About, Education, Skills, Projects, Experience, Contact) -->
+    <nav class="nav-pill" id="nav-pill" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 1: HOME (HERO)
+         --------------------------------------------------------------------- -->
+    <section id="home" aria-label="Home hero section">
+      <!-- Edge-to-edge giant "PORTFOLIO" watermark text -->
+      <div class="hero-giant-text" aria-hidden="true">PORTFOLIO</div>
+
+      <!-- Centered Color Cutout Photo overlapping "T" and "F" -->
+      <div class="hero-photo-wrapper">
+        <img 
+          src="assets/images/new-hero.png" 
+          alt="Portrait of Rhea Mae Narag" 
+          class="hero-photo-cutout"
+          width="1479"
+          height="1935"
+          loading="eager"
+        >
+      </div>
+
+      <!-- Bottom Layout Container -->
+      <div class="hero-bottom-container">
+        <!-- Bottom-Left: "HI, I'M!" + Name + CTA Buttons -->
+        <div class="hero-left-col">
+          <p class="hero-greeting">HI, I'M!</p>
+          <h1 class="hero-name">Rhea Narag</h1>
+          <div class="hero-buttons">
+            <a href="assets/resume/Rhea_Mae_Narag_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-hero btn-resume" id="btn-view-resume" aria-label="View Rhea Mae Narag's Resume (opens in a new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+                <line x1="8" y1="17" x2="12" y2="17"></line>
+              </svg>
+              View Resume
+            </a>
+            <a href="#contact" class="btn btn-hero btn-contact">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom-Right: UI/UX DESI NER Stack -->
+        <div class="hero-right-col" aria-label="Professional focus">
+          <div class="hero-role-uiux">UI/UX</div>
+          <div class="hero-role-desktop" aria-hidden="true">
+            <div class="hero-role-desi">DESI</div>
+            <div class="hero-role-gner">GNER</div>
+          </div>
+          <div class="hero-role-mobile">DESIGNER</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 2: 01 / ABOUT ME
+         --------------------------------------------------------------------- -->
+    <section id="about" class="section reveal-on-scroll" aria-labelledby="about-heading">
+      <div class="section-heading-wrap">
+        <h2 id="about-heading" class="section-heading">
+          <span class="section-num">01</span>
+          <span class="slash">/</span>
+          <span class="section-title-text">ABOUT ME</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Column: Bio paragraphs + Frosted Stat Cards -->
+        <div class="about-text-col">
+          <p class="about-p">
+            I'm a Junior Information Technology student at the <span class="text-crimson">Polytechnic University of the Philippines</span> with a growing interest in frontend development and creating digital experiences that are both functional and easy to use.
+          </p>
+          <p class="about-p">
+            I enjoy turning ideas into working interfaces, exploring how systems work behind the scenes, and learning new technologies along the way.
+          </p>
+          <p class="about-p">
+            My experience includes <span class="text-crimson">frontend development</span>, <span class="text-crimson">UI/UX design</span>, <span class="text-crimson">database management</span>, and <span class="text-crimson">network infrastructure</span>, with a focus on continuously improving my skills through hands-on projects and collaboration.
+          </p>
+
+          <!-- 3 Frosted Stat Cards in a row -->
+          <div class="about-stats-row">
+            <div class="stat-card">
+              <span class="stat-title">PUP</span>
+              <span class="stat-sub">BSIT Class &lsquo;28</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-title">CONSISTENT</span>
+              <span class="stat-sub">President's Lister</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-title">SBFI</span>
+              <span class="stat-sub">External Scholar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Ghost "ISKOLAR" + B&W Cutout + 4 Callouts -->
+        <div class="about-visual-col">
+          <div class="about-ghost-text" aria-hidden="true">ISKOLAR</div>
+
+          <!-- Photo Wrapper: Callouts and leader lines are anchored inside so they automatically follow the photo everywhere -->
+          <div class="about-photo-wrapper">
+            <img 
+              src="assets/images/rhea-hero.png" 
+              alt="Grayscale portrait of Rhea Mae Narag" 
+              class="about-photo"
+              width="540"
+              height="720"
+              loading="lazy"
+            >
+
+            <!-- 1. BSIT (Upper Left) -->
+            <div class="callout-group callout-bsit">
+              <span class="callout-label">BSIT</span>
+              <span class="callout-line"></span>
+            </div>
+
+            <!-- 2. ISKOLAR NG BAYAN (Lower Left) -->
+            <div class="callout-group callout-iskolar">
+              <svg class="callout-leader-line line-iskolar" viewBox="0 0 50 40" aria-hidden="true">
+                <line x1="4" y1="36" x2="46" y2="4"></line>
+              </svg>
+              <span class="callout-label">ISKOLAR NG<br>BAYAN</span>
+            </div>
+
+            <!-- 3. UI/UX DESIGNER (Middle Right) -->
+            <div class="callout-group callout-designer">
+              <span class="callout-line"></span>
+              <span class="callout-label">UI/UX<br>DESIGNER</span>
+            </div>
+
+            <!-- 4. FRONTEND DEVELOPER (Bottom Right - Crimson) -->
+            <div class="callout-group callout-frontend">
+              <svg class="callout-leader-line line-frontend" viewBox="0 0 55 26" aria-hidden="true">
+                <line x1="4" y1="4" x2="51" y2="22"></line>
+              </svg>
+              <span class="callout-label">FRONTEND<br>DEVELOPER</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 3: 02 / EDUCATION
+         --------------------------------------------------------------------- -->
+    <section id="education" class="section reveal-on-scroll" aria-labelledby="education-heading">
+      <div class="section-heading-wrap">
+        <h2 id="education-heading" class="section-heading">
+          <span class="section-num">02</span>
+          <span class="slash">/</span>
+          <span class="section-title-text">EDUCATION</span>
+        </h2>
+        <p class="section-subtitle">Academic Background and Scholarship Recognition</p>
+      </div>
+
+      <!-- 3 Full-Width White Cards -->
+      <div class="education-cards-list">
+        <!-- Card 1: BSIT PUP -->
+        <article class="edu-card" aria-labelledby="edu-title-1">
+          <div class="edu-card-left">
+            <h3 id="edu-title-1" class="edu-title">BS Information Technology</h3>
+            <p class="edu-institution">Polytechnic University of the Philippines</p>
+            <p class="edu-location">STA. MESA, MANILA</p>
+            <p class="edu-description">
+              Preparing for a career in information systems development, creating solutions that meet real user needs.
+            </p>
+            <div class="edu-tags-row">
+              <span class="tag-pill">PROGRAMMING</span>
+              <span class="tag-pill">WEB DEVELOPMENT</span>
+              <span class="tag-pill">DATABASE DESIGN</span>
+              <span class="tag-pill">NETWORKING</span>
+            </div>
+          </div>
+          <div class="edu-card-right">
+            <span class="edu-status-pill">
+              <span class="badge-dot"></span>
+              Current
+            </span>
+            <img src="assets/logos/pup-seal.png" alt="PUP University Seal" class="edu-logo" width="145" height="145" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Card 2: STEM JRLMHS -->
+        <article class="edu-card" aria-labelledby="edu-title-2">
+          <div class="edu-card-left">
+            <h3 id="edu-title-2" class="edu-title">Science, Technology, Engineering, and Mathematics (STEM)</h3>
+            <p class="edu-institution">Juan R. Liwag Memorial High School - SHS</p>
+            <p class="edu-location">GAPAN CITY, NUEVA ECIJA</p>
+            <p class="edu-description">
+              Collaborated on the synthesis and characterization of hydrothermally grown copper oxide nanoparticles (CuO NPs).
+            </p>
+            <div class="edu-tags-row">
+              <span class="tag-pill">WITH HIGHEST HONORS</span>
+              <span class="tag-pill">RESEARCH</span>
+              <span class="tag-pill">JOURNALISM</span>
+            </div>
+          </div>
+          <div class="edu-card-right">
+            <span class="edu-status-pill badge-neutral">2024</span>
+            <img src="assets/logos/jrlmhs-seal.png" alt="Juan R. Liwag Memorial High School Seal" class="edu-logo" width="145" height="145" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Card 3: Security Bank Scholarship -->
+        <article class="edu-card" aria-labelledby="edu-title-3">
+          <div class="edu-card-left">
+            <h3 id="edu-title-3" class="edu-title">Scholarship</h3>
+            <p class="edu-institution">Security Bank Foundation Inc.</p>
+            <p class="edu-location">PHILIPPINES</p>
+            <p class="edu-description">
+              As a scholar, I am committed to academic excellence, continuous learning, and professional development.
+            </p>
+            <div class="edu-tags-row">
+              <span class="tag-pill">EXTERNAL SCHOLAR</span>
+            </div>
+          </div>
+          <div class="edu-card-right">
+            <span class="edu-status-pill">
+              <span class="badge-dot"></span>
+              Current
+            </span>
+            <img src="assets/logos/secbank-logo.png" alt="Security Bank Logo" class="edu-logo" width="145" height="145" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 4: 03 / SKILLS (LAPTOP & REVEALED TOOLKIT)
+         --------------------------------------------------------------------- -->
+    <section id="skills" class="section reveal-on-scroll" aria-labelledby="skills-heading">
+      <div class="section-heading-wrap">
+        <h2 id="skills-heading" class="section-heading">
+          <span class="section-num">03</span>
+          <span class="slash">/</span>
+          <span class="section-title-text">SKILLS</span>
+        </h2>
+      </div>
+
+      <!-- Laptop Mockup (Closed State by Default) -->
+      <div class="laptop-mockup-wrapper">
+        <div class="laptop-lid">
+          <div class="laptop-camera-dot" aria-hidden="true"></div>
+          <div class="laptop-screen">
+            <div class="screen-header">
+              <span class="screen-breadcrumb">rmn / my-toolkit</span>
+              <span class="screen-indicator">
+                <span class="indicator-dot"></span>
+                STACK INSIDE
+              </span>
+            </div>
+
+            <h3 class="screen-headline">Built on curiosity. Packed with tools.</h3>
+            <p class="screen-subtitle">Open my laptop's toolkit to see what I work with.</p>
+
+            <!-- 3x2 Grid of Category Cards -->
+            <div class="screen-grid">
+              <!-- Frontend -->
+              <div class="skill-overview-card">
+                <svg class="skill-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                  <line x1="8" x2="16" y1="21" y2="21"></line>
+                  <line x1="12" x2="12" y1="17" y2="21"></line>
+                </svg>
+                <div class="skill-card-info">
+                  <span class="skill-card-title">Frontend</span>
+                  <span class="skill-card-desc">Web &amp; client</span>
+                </div>
+              </div>
+
+              <!-- UI/UX Design -->
+              <div class="skill-overview-card">
+                <svg class="skill-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19 7-7 3 3-7 7-3-3z"></path>
+                  <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="m2 2 7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+                <div class="skill-card-info">
+                  <span class="skill-card-title">UI/UX Design</span>
+                  <span class="skill-card-desc">Design &amp; research</span>
+                </div>
+              </div>
+
+              <!-- Programming -->
+              <div class="skill-overview-card">
+                <svg class="skill-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <div class="skill-card-info">
+                  <span class="skill-card-title">Programming</span>
+                  <span class="skill-card-desc">Core stack</span>
+                </div>
+              </div>
+
+              <!-- Databases -->
+              <div class="skill-overview-card">
+                <svg class="skill-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                  <path d="M3 12A9 3 0 0 0 21 12"></path>
+                </svg>
+                <div class="skill-card-info">
+                  <span class="skill-card-title">Databases</span>
+                  <span class="skill-card-desc">Data management</span>
+                </div>
+              </div>
+
+              <!-- Networking -->
+              <div class="skill-overview-card">
+                <svg class="skill-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                  <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                  <path d="M5 16v-4h14v4"></path>
+                  <path d="M12 8v8"></path>
+                </svg>
+                <div class="skill-card-info">
+                  <span class="skill-card-title">Networking</span>
+                  <span class="skill-card-desc">Infrastructure</span>
+                </div>
+              </div>
+
+              <!-- Developer Tools -->
+              <div class="skill-overview-card">
+                <svg class="skill-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" x2="20" y1="19" y2="19"></line>
+                </svg>
+                <div class="skill-card-info">
+                  <span class="skill-card-title">Developer Tools</span>
+                  <span class="skill-card-desc">Environment</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Centered Crimson Pill Button to Reveal Stack -->
+            <button class="btn-reveal-stack" id="btn-reveal-stack" aria-haspopup="dialog" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                <polygon points="3 3 10.07 20.97 12.58 13.42 20.13 10.91 3 3"></polygon>
+              </svg>
+              Click to reveal my stack
+            </button>
+          </div>
+        </div>
+
+        <!-- Metallic Base with Stylized Keyboard Deck (Exact 1:1 replica from reference 5.1.png) -->
+        <div class="laptop-base" aria-hidden="true">
+          <img 
+            src="assets/images/laptop-base-exact.png" 
+            alt="Laptop metallic base and keyboard deck" 
+            class="laptop-base-img" 
+            width="3360" 
+            height="225" 
+            loading="lazy"
+          >
+        </div>
+
+        <!-- REVEALED STATE (Window Panel Floating Over Laptop) -->
+        <div class="revealed-toolkit-panel" id="revealed-toolkit-panel" role="dialog" aria-label="Revealed Toolkit" aria-hidden="true">
+          <!-- Window Header -->
+          <div class="revealed-header">
+            <div class="revealed-breadcrumb">
+              <svg class="revealed-folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              <span>rmn / my-toolkit / all-skills</span>
+            </div>
+            <div class="revealed-status-group">
+              <span class="revealed-status-label">TOOLKIT REVEALED</span>
+              <button class="btn-close-x" id="btn-close-toolkit-x" aria-label="Close revealed toolkit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3x2 Grid with Wrapped Skill Chips -->
+          <div class="revealed-grid">
+            <!-- Frontend -->
+            <div class="revealed-card">
+              <div class="revealed-card-header">
+                <svg class="revealed-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                  <line x1="8" x2="16" y1="21" y2="21"></line>
+                  <line x1="12" x2="12" y1="17" y2="21"></line>
+                </svg>
+                <h4 class="revealed-card-title">Frontend</h4>
+              </div>
+              <div class="chips-wrap">
+                <div class="tech-badge" data-tooltip="HTML5" title="HTML5" aria-label="HTML5">
+                  <img src="assets/tech/html5.svg" alt="HTML5" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="CSS3" title="CSS3" aria-label="CSS3">
+                  <img src="assets/tech/css3.svg" alt="CSS3" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="JavaScript" title="JavaScript" aria-label="JavaScript">
+                  <img src="assets/tech/javascript.svg" alt="JavaScript" width="28" height="28" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="revealed-card">
+              <div class="revealed-card-header">
+                <svg class="revealed-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19 7-7 3 3-7 7-3-3z"></path>
+                  <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="m2 2 7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+                <h4 class="revealed-card-title">UI/UX Design</h4>
+              </div>
+              <div class="chips-wrap">
+                <div class="tech-badge" data-tooltip="Figma" title="Figma" aria-label="Figma">
+                  <img src="assets/tech/figma.svg" alt="Figma" width="28" height="28" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Programming -->
+            <div class="revealed-card">
+              <div class="revealed-card-header">
+                <svg class="revealed-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h4 class="revealed-card-title">Programming</h4>
+              </div>
+              <div class="chips-wrap">
+                <div class="tech-badge" data-tooltip="Python" title="Python" aria-label="Python">
+                  <img src="assets/tech/python.svg" alt="Python" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="Java" title="Java" aria-label="Java">
+                  <img src="assets/tech/java.svg" alt="Java" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="C" title="C" aria-label="C">
+                  <img src="assets/tech/c.svg" alt="C" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="JavaScript" title="JavaScript" aria-label="JavaScript">
+                  <img src="assets/tech/javascript.svg" alt="JavaScript" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="R" title="R" aria-label="R">
+                  <img src="assets/tech/r.svg" alt="R" width="28" height="28" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="revealed-card">
+              <div class="revealed-card-header">
+                <svg class="revealed-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                  <path d="M3 12A9 3 0 0 0 21 12"></path>
+                </svg>
+                <h4 class="revealed-card-title">Databases</h4>
+              </div>
+              <div class="chips-wrap">
+                <div class="tech-badge" data-tooltip="MySQL" title="MySQL" aria-label="MySQL">
+                  <img src="assets/tech/mysql.svg" alt="MySQL" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="PostgreSQL" title="PostgreSQL" aria-label="PostgreSQL">
+                  <img src="assets/tech/postgresql.svg" alt="PostgreSQL" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="SQLite" title="SQLite" aria-label="SQLite">
+                  <img src="assets/tech/sqlite.svg" alt="SQLite" width="28" height="28" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Networking -->
+            <div class="revealed-card">
+              <div class="revealed-card-header">
+                <svg class="revealed-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                  <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                  <path d="M5 16v-4h14v4"></path>
+                  <path d="M12 8v8"></path>
+                </svg>
+                <h4 class="revealed-card-title">Networking</h4>
+              </div>
+              <div class="chips-wrap">
+                <div class="tech-badge" data-tooltip="Cisco" title="Cisco" aria-label="Cisco">
+                  <img src="assets/tech/cisco.svg" alt="Cisco" width="28" height="28" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer Tools -->
+            <div class="revealed-card">
+              <div class="revealed-card-header">
+                <svg class="revealed-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" x2="20" y1="19" y2="19"></line>
+                </svg>
+                <h4 class="revealed-card-title">Developer Tools</h4>
+              </div>
+              <div class="chips-wrap">
+                <div class="tech-badge" data-tooltip="Git" title="Git" aria-label="Git">
+                  <img src="assets/tech/git.svg" alt="Git" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="GitHub" title="GitHub" aria-label="GitHub">
+                  <img src="assets/tech/github.svg" alt="GitHub" width="28" height="28" loading="lazy">
+                </div>
+                <div class="tech-badge" data-tooltip="VS Code" title="VS Code" aria-label="VS Code">
+                  <img src="assets/tech/vscode.svg" alt="VS Code" width="28" height="28" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Centered Pill Button below laptop base (Visible when revealed) -->
+      <button class="btn-close-toolkit-bottom" id="btn-close-toolkit-bottom">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        Close toolkit
+      </button>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 5: 04 / PROJECTS (Custom Scroll Container)
+         --------------------------------------------------------------------- -->
+    <section id="projects" class="section reveal-on-scroll" aria-labelledby="projects-heading">
+      <div class="section-heading-wrap">
+        <h2 id="projects-heading" class="section-heading">
+          <span class="section-num">04</span>
+          <span class="slash">/</span>
+          <span class="section-title-text">PROJECTS</span>
+        </h2>
+        <p class="section-subtitle">
+          Hands-on projects covering full-stack database engineering, user-centered interface design, and secure network infrastructure.
+        </p>
+      </div>
+
+      <!-- Interactive Projects Carousel (Redesigned with Experience Section Carousel Language) -->
+      <div class="projects-carousel" id="projects-carousel" role="region" aria-roledescription="carousel" aria-label="Featured Projects Showcase" tabindex="0">
+        
+        <!-- Header Controls Bar (Matching Experience Gallery Header) -->
+        <div class="projects-carousel-header">
+          <div class="projects-carousel-meta">
+            <span class="gallery-kicker">Featured Projects</span>
+            <span class="projects-counter" aria-live="polite">
+              <span class="projects-current-num" id="projects-current-num">01</span>
+              <span class="projects-slash">/</span>
+              <span class="projects-total-num">05</span>
+            </span>
+          </div>
+
+          <div class="gallery-nav-btns" aria-label="Project carousel controls">
+            <button 
+              type="button" 
+              class="gallery-arrow-btn projects-prev is-disabled" 
+              id="projects-prev-btn" 
+              aria-label="Previous project slide" 
+              disabled
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button 
+              type="button" 
+              class="gallery-arrow-btn projects-next" 
+              id="projects-next-btn" 
+              aria-label="Next project slide"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Horizontal Scrollable Track -->
+        <div class="projects-track" id="projects-track" tabindex="-1">
+          
+          <!-- Slide 01: SALN Submission Portal -->
+          <article class="project-slide" aria-labelledby="proj-slide-01-title" data-slide-index="0">
+            <div class="project-slide-card">
+              <!-- Top Preview Box -->
+              <div class="project-slide-visual">
+                <span class="project-slide-badge" aria-hidden="true">01</span>
+                <a 
+                  href="https://github.com/mrtnriel/SALN-system" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="project-slide-media-link"
+                  aria-label="View SALN Submission Portal repository on GitHub (opens in a new tab)"
+                >
+                  <img 
+                    src="assets/projects/saln-system.webp" 
+                    alt="SALN Submission Portal interface on laptop mockup" 
+                    class="project-slide-img" 
+                    loading="lazy"
+                  >
+                  <div class="project-slide-overlay" aria-hidden="true">
+                    <span class="project-view-pill">
+                      <span>View on GitHub</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Content Body -->
+              <div class="project-slide-content">
+                <div class="project-slide-category">Full-Stack Web Application</div>
+                <h3 id="proj-slide-01-title" class="project-slide-title">
+                  <a href="https://github.com/mrtnriel/SALN-system" target="_blank" rel="noopener noreferrer">SALN Submission Portal</a>
+                </h3>
+                <p class="project-slide-desc">
+                  A centralized institutional submission system streamlining the Statement of Assets, Liabilities, and Net Worth filing process with role-based access, automated verification, and secure database management.
+                </p>
+                <div class="project-slide-tags">
+                  <span class="exp-tag">Python</span>
+                  <span class="exp-tag">MySQL</span>
+                  <span class="exp-tag">JavaScript</span>
+                </div>
+                <div class="project-slide-footer">
+                  <a 
+                    href="https://github.com/mrtnriel/SALN-system" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="project-action-link"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>View Repository</span>
+                    <svg class="action-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 02: Lab Room Booking App -->
+          <article class="project-slide" aria-labelledby="proj-slide-02-title" data-slide-index="1">
+            <div class="project-slide-card">
+              <div class="project-slide-visual">
+                <span class="project-slide-badge" aria-hidden="true">02</span>
+                <a 
+                  href="https://www.figma.com/proto/gqwc5tSAWlLeSLLpxWD74U/High-Fidelity-Wireframe--Group-4-?node-id=273-3882&starting-point-node-id=273%3A3882" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="project-slide-media-link"
+                  aria-label="View Lab Room Booking App prototype on Figma (opens in a new tab)"
+                >
+                  <img 
+                    src="assets/projects/pupwesto.jpg" 
+                    alt="PUPwesto lab room reservation interface on laptop and phone" 
+                    class="project-slide-img" 
+                    loading="lazy"
+                  >
+                  <div class="project-slide-overlay" aria-hidden="true">
+                    <span class="project-view-pill">
+                      <span>Open in Figma</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="project-slide-content">
+                <div class="project-slide-category">UI/UX Design &amp; High-Fidelity Prototype</div>
+                <h3 id="proj-slide-02-title" class="project-slide-title">
+                  <a href="https://www.figma.com/proto/gqwc5tSAWlLeSLLpxWD74U/High-Fidelity-Wireframe--Group-4-?node-id=273-3882&starting-point-node-id=273%3A3882" target="_blank" rel="noopener noreferrer">Lab Room Booking App (PUPwesto)</a>
+                </h3>
+                <p class="project-slide-desc">
+                  A mobile booking system prototype for the PUP Sta. Mesa Main Building, designed to optimize laboratory room scheduling and display real-time seat availability maps.
+                </p>
+                <div class="project-slide-tags">
+                  <span class="exp-tag">Figma</span>
+                  <span class="exp-tag">UI/UX Design</span>
+                  <span class="exp-tag">Design Systems</span>
+                  <span class="exp-tag">Wireframing</span>
+                  <span class="exp-tag">User Research</span>
+                </div>
+                <div class="project-slide-footer">
+                  <a 
+                    href="https://www.figma.com/proto/gqwc5tSAWlLeSLLpxWD74U/High-Fidelity-Wireframe--Group-4-?node-id=273-3882&starting-point-node-id=273%3A3882" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="project-action-link"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                      <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                      <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                      <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                      <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                    </svg>
+                    <span>Explore Prototype</span>
+                    <svg class="action-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 03: Campus Network Architecture -->
+          <article class="project-slide" aria-labelledby="proj-slide-03-title" data-slide-index="2">
+            <div class="project-slide-card">
+              <div class="project-slide-visual">
+                <span class="project-slide-badge" aria-hidden="true">03</span>
+                <div class="project-slide-media-box">
+                  <img 
+                    src="assets/projects/topology.png" 
+                    alt="Packet Tracer enterprise campus network topology schema" 
+                    class="project-slide-img" 
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+
+              <div class="project-slide-content">
+                <div class="project-slide-category">Network Engineering &amp; Infrastructure</div>
+                <h3 id="proj-slide-03-title" class="project-slide-title">Campus Network Architecture</h3>
+                <p class="project-slide-desc">
+                  A complete enterprise network blueprint tailored for the hospitality industry. This project delivers a fault-tolerant IT infrastructure for 'Spanning Tree Resort,' utilizing dual-core redundancy, secure inter-VLAN routing, and strict firewall policies to protect internal resort operations while providing seamless, isolated connectivity for guests.
+                </p>
+                <div class="project-slide-tags">
+                  <span class="exp-tag">Cisco Packet Tracer</span>
+                  <span class="exp-tag">OSPF Routing</span>
+                  <span class="exp-tag">VLAN Segmentation</span>
+                  <span class="exp-tag">Network Security</span>
+                  <span class="exp-tag">ACLs</span>
+                </div>
+                <div class="project-slide-footer">
+                  <span class="project-status-pill">
+                    <span class="badge-dot"></span>
+                    <span>Infrastructure Architecture</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 04: President's & Dean's List Announcement -->
+          <article class="project-slide" aria-labelledby="proj-slide-04-title" data-slide-index="3">
+            <div class="project-slide-card">
+              <div class="project-slide-visual">
+                <span class="project-slide-badge" aria-hidden="true">04</span>
+                <div class="project-slide-media-box">
+                  <img 
+                    src="assets/projects/pl-dl-posting.jpg" 
+                    alt="President's and Dean's List digital publication graphic design" 
+                    class="project-slide-img" 
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+
+              <div class="project-slide-content">
+                <div class="project-slide-category">Graphic Design &amp; Digital Publication</div>
+                <h3 id="proj-slide-04-title" class="project-slide-title">PL-DL Academic Honors Announcement</h3>
+                <p class="project-slide-desc">
+                  High-visibility university publication celebrating student academic honors. Engineered with modern editorial typography, balanced visual hierarchy, and cohesive brand palettes to maximize social reach and engagement.
+                </p>
+                <div class="project-slide-tags">
+                  <span class="exp-tag">Canva</span>
+                  <span class="exp-tag">Graphic Design</span>
+                  <span class="exp-tag">Editorial Typography</span>
+                  <span class="exp-tag">Modern Design</span>
+                  <span class="exp-tag">Visual Media</span>
+                </div>
+                <div class="project-slide-footer">
+                  <span class="project-status-pill">
+                    <span class="badge-dot"></span>
+                    <span>PL/DL Publication Matrial</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 05: Commemorative Birthday Creative -->
+          <article class="project-slide" aria-labelledby="proj-slide-05-title" data-slide-index="4">
+            <div class="project-slide-card">
+              <div class="project-slide-visual">
+                <span class="project-slide-badge" aria-hidden="true">05</span>
+                <div class="project-slide-media-box">
+                  <img 
+                    src="assets/projects/bday-postingjpg.jpg" 
+                    alt="Vintage style digital birthday greeting card on tablet display" 
+                    class="project-slide-img" 
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+
+              <div class="project-slide-content">
+                <div class="project-slide-category">Digital Illustration &amp; Social Creative</div>
+                <h3 id="proj-slide-05-title" class="project-slide-title">Commemorative Birthday Creative</h3>
+                <p class="project-slide-desc">
+                  Nostalgic, vintage-inspired commemorative digital artwork combining handcrafted retro typography, warm pastel palettes, and expressive illustrated textures designed for community and organization engagement.
+                </p>
+                <div class="project-slide-tags">
+                  <span class="exp-tag">Digital Illustration</span>
+                  <span class="exp-tag">Figma</span>
+                  <span class="exp-tag">Color Theory</span>
+                  <span class="exp-tag">Visual Design</span>
+                  <span class="exp-tag">Creative Direction</span>
+                </div>
+                <div class="project-slide-footer">
+                  <span class="project-status-pill">
+                    <span class="badge-dot"></span>
+                    <span>Creative Illustration</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pagination Dots Bar -->
+        <div class="projects-pagination" id="projects-pagination" role="tablist" aria-label="Projects pagination">
+          <button type="button" class="project-dot is-active" role="tab" aria-selected="true" aria-label="Go to slide 1: SALN Submission Portal" data-index="0"></button>
+          <button type="button" class="project-dot" role="tab" aria-selected="false" aria-label="Go to slide 2: Lab Room Booking App" data-index="1"></button>
+          <button type="button" class="project-dot" role="tab" aria-selected="false" aria-label="Go to slide 3: Campus Network Architecture" data-index="2"></button>
+          <button type="button" class="project-dot" role="tab" aria-selected="false" aria-label="Go to slide 4: PL-DL Academic Honors" data-index="3"></button>
+          <button type="button" class="project-dot" role="tab" aria-selected="false" aria-label="Go to slide 5: Commemorative Birthday Creative" data-index="4"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 6: 05 / EXPERIENCE (Timeline with Soft Glow)
+         --------------------------------------------------------------------- -->
+    <section id="experience" class="section reveal-on-scroll" aria-labelledby="experience-heading">
+      <div class="section-heading-wrap">
+        <h2 id="experience-heading" class="section-heading">
+          <span class="section-num">05</span>
+          <span class="slash">/</span>
+          <span class="section-title-text">EXPERIENCE</span>
+        </h2>
+        <p class="section-subtitle">
+          Career timeline detailing current executive officer roles, student leadership, and active tech community involvement.
+        </p>
+      </div>
+
+      <!-- Vertical List Indented ~80px -->
+      <div class="experience-list" id="experience-accordion">
+        <!-- Row 1: Cisco NetConnect PUP -->
+        <div class="experience-row" id="exp-row-1">
+          <button 
+            type="button" 
+            class="exp-accordion-trigger" 
+            id="exp-trigger-1" 
+            aria-expanded="false" 
+            aria-controls="exp-panel-1"
+          >
+            <div class="exp-logo-wrapper">
+              <img src="assets/logos/cncp-pup.jpg" alt="Cisco NetConnect PUP Logo" width="56" height="56" loading="lazy">
+            </div>
+            <div class="exp-content">
+              <h3 class="exp-title">Vice Chief Relations Officer</h3>
+              <p class="exp-org">Cisco NetConnect PUP - Manila</p>
+              <p class="exp-desc">
+                Currently serving as Vice Chief Relations Officer (VCRO), leading external partnerships, organizational relations, and student outreach for the Cisco NetConnect organization across university chapters.
+              </p>
+              <div class="exp-tags-row">
+                <span class="exp-tag">Relations &amp; Outreach</span>
+                <span class="exp-tag">External Partnerships</span>
+                <span class="exp-tag">Leadership</span>
+                <span class="exp-tag">Public Relations</span>
+              </div>
+            </div>
+            <div class="exp-header-meta">
+              <div class="exp-badge">
+                <span class="badge-dot"></span>
+                Current VCRO
+              </div>
+              <div class="exp-chevron-wrap" aria-hidden="true">
+                <svg class="exp-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <!-- Collapsible Panel with Minimalist Horizontal Image Strip -->
+          <div 
+            id="exp-panel-1" 
+            class="exp-collapse" 
+            role="region" 
+            aria-labelledby="exp-trigger-1"
+            inert
+          >
+            <div class="exp-collapse-inner">
+              <div class="exp-gallery" role="region" aria-roledescription="carousel" aria-label="Cisco NetConnect PUP Activity Gallery" tabindex="0">
+                <!-- Discreet Header with Kicker & Arrow Controls -->
+                <div class="gallery-header">
+                  <span class="gallery-kicker">Activities &amp; Highlights</span>
+                  <div class="gallery-nav-btns" aria-label="Gallery controls">
+                    <button type="button" class="gallery-arrow-btn gallery-prev is-disabled" aria-label="Scroll left in Cisco NetConnect gallery" disabled>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                      </svg>
+                    </button>
+                    <button type="button" class="gallery-arrow-btn gallery-next" aria-label="Scroll right in Cisco NetConnect gallery">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Horizontal Image Strip (Unboxed, multiple visible side-by-side with peek) -->
+                <div class="gallery-strip" tabindex="-1">
+                  <!-- Photo 1 (Real repo event photo: cisco/1.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/cisco/1.jpg" 
+                        alt="Rhea hosting and facilitating a Cisco NetConnect event session" 
+                        class="gallery-img" 
+                        loading="eager"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Segment's Emcee</figcaption>
+                  </figure>
+
+                  <!-- Photo 2 (Real repo event photo: cisco/2.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/cisco/2.jpg" 
+                        alt="Cisco NetConnect PUP student members and community gathering" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Onboarding</figcaption>
+                  </figure>
+
+                  <!-- Photo 3 (Real repo event photo: cisco/3.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/cisco/3.jpg" 
+                        alt="Rhea with Cisco NetConnect executive committee officers" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Relations Department</figcaption>
+                  </figure>
+
+                  <!-- Photo 4 (Real repo event photo: cisco/4.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/cisco/4.jpg" 
+                        alt="Rhea with Cisco NetConnect student relations team" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Networking with CiscoNetConnect Members</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Microsoft Campus Club -->
+        <div class="experience-row" id="exp-row-2">
+          <button 
+            type="button" 
+            class="exp-accordion-trigger" 
+            id="exp-trigger-2" 
+            aria-expanded="false" 
+            aria-controls="exp-panel-2"
+          >
+            <div class="exp-logo-wrapper">
+              <img src="assets/logos/msc-pup.jpg" alt="Microsoft Campus Club Logo" width="56" height="56" loading="lazy">
+            </div>
+            <div class="exp-content">
+              <h3 class="exp-title">Marketing Strategy Officer</h3>
+              <p class="exp-org">Microsoft Campus Club (MCC) • PUP</p>
+              <p class="exp-desc">
+                Currently serving as Marketing Strategy Officer (MSO), formulating promotional strategies, brand messaging, and campaign initiatives to expand campus visibility, student engagement, and tech event participation.
+              </p>
+              <div class="exp-tags-row">
+                <span class="exp-tag">Marketing Strategy</span>
+                <span class="exp-tag">Brand Outreach</span>
+                <span class="exp-tag">Campaign Planning</span>
+                <span class="exp-tag">Leadership</span>
+              </div>
+            </div>
+            <div class="exp-header-meta">
+              <div class="exp-badge">
+                <span class="badge-dot"></span>
+                Current MSO
+              </div>
+              <div class="exp-chevron-wrap" aria-hidden="true">
+                <svg class="exp-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <!-- Collapsible Panel with Minimalist Horizontal Image Strip -->
+          <div 
+            id="exp-panel-2" 
+            class="exp-collapse" 
+            role="region" 
+            aria-labelledby="exp-trigger-2"
+            inert
+          >
+            <div class="exp-collapse-inner">
+              <div class="exp-gallery gallery--portrait" role="region" aria-roledescription="carousel" aria-label="Microsoft Campus Club Activity Gallery" tabindex="0">
+                <!-- Discreet Header with Kicker & Arrow Controls -->
+                <div class="gallery-header">
+                  <span class="gallery-kicker">Activities &amp; Highlights</span>
+                  <div class="gallery-nav-btns" aria-label="Gallery controls">
+                    <button type="button" class="gallery-arrow-btn gallery-prev is-disabled" aria-label="Scroll left in Microsoft Campus Club gallery" disabled>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                      </svg>
+                    </button>
+                    <button type="button" class="gallery-arrow-btn gallery-next" aria-label="Scroll right in Microsoft Campus Club gallery">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Horizontal Image Strip (Unboxed, multiple visible side-by-side with peek) -->
+                <div class="gallery-strip" tabindex="-1">
+                  <!-- Photo 1 (Real repo campaign photo: 58f55766-1de9-409e-9b6a-05a2b31cc5cf.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/mcc/58f55766-1de9-409e-9b6a-05a2b31cc5cf.jpg" 
+                        alt="Rhea promoting Microsoft Campus Club PUP membership applications" 
+                        class="gallery-img" 
+                        loading="eager"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Membership Application Promotional Campaign</figcaption>
+                  </figure>
+
+                  <!-- Photo 2 (Real repo campaign photo: 3ecd4c39-9433-4631-a3f4-cbc8b40b7fcc.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/mcc/3ecd4c39-9433-4631-a3f4-cbc8b40b7fcc.jpg" 
+                        alt="Microsoft Campus Club PUP brand identity and new chapter launch campaign" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Brand Strategy &amp; New Chapter Identity Launch</figcaption>
+                  </figure>
+
+                  <!-- Photo 3 (Real repo campaign photo: 98458326-87dd-4866-82c0-f09f80c8c3ae.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/mcc/98458326-87dd-4866-82c0-f09f80c8c3ae.jpg" 
+                        alt="MCC PUP official Microsoft accreditation campaign announcement" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">Official Microsoft Chapter Accreditation Announcement</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: AWS Cloud Club -->
+        <div class="experience-row" id="exp-row-3">
+          <button 
+            type="button" 
+            class="exp-accordion-trigger" 
+            id="exp-trigger-3" 
+            aria-expanded="false" 
+            aria-controls="exp-panel-3"
+          >
+            <div class="exp-logo-wrapper">
+              <img src="assets/logos/aws-logo.png" alt="AWS Cloud Club Logo" width="56" height="56" loading="lazy">
+            </div>
+            <div class="exp-content">
+              <h3 class="exp-title">UI/UX DESIGNER</h3>
+              <p class="exp-org">AWS Cloud Club • PUP</p>
+              <p class="exp-desc">
+                Active student member participating in AWS community events, volunteering, hands-on workshops, and recently joined the developer team as a UI/UX designer.
+              </p>
+              <div class="exp-tags-row">
+                <span class="exp-tag">Dev Team</span>
+                <span class="exp-tag">Volunteering</span>
+                <span class="exp-tag">Tech Events</span>
+              </div>
+            </div>
+            <div class="exp-header-meta">
+              <div class="exp-badge">
+                <span class="badge-dot"></span>
+                Current UI/UX DESIGNER
+              </div>
+              <div class="exp-chevron-wrap" aria-hidden="true">
+                <svg class="exp-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <!-- Collapsible Panel with Minimalist Horizontal Image Strip -->
+          <div 
+            id="exp-panel-3" 
+            class="exp-collapse" 
+            role="region" 
+            aria-labelledby="exp-trigger-3"
+            inert
+          >
+            <div class="exp-collapse-inner">
+              <div class="exp-gallery" role="region" aria-roledescription="carousel" aria-label="AWS Cloud Club Activity Gallery" tabindex="0">
+                <!-- Discreet Header with Kicker & Arrow Controls -->
+                <div class="gallery-header">
+                  <span class="gallery-kicker">Activities &amp; Highlights</span>
+                  <div class="gallery-nav-btns" aria-label="Gallery controls">
+                    <button type="button" class="gallery-arrow-btn gallery-prev is-disabled" aria-label="Scroll left in AWS Cloud Club gallery" disabled>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                      </svg>
+                    </button>
+                    <button type="button" class="gallery-arrow-btn gallery-next" aria-label="Scroll right in AWS Cloud Club gallery">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Horizontal Image Strip (Unboxed, multiple visible side-by-side with peek) -->
+                <div class="gallery-strip" tabindex="-1">
+                  <!-- Photo 1 (Real repo event photo: aws/1.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/aws/1.jpg" 
+                        alt="AWS Cloud Club Developer Team and UI/UX Design Meeting" 
+                        class="gallery-img" 
+                        loading="eager"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">AWS BuildOvernights Kiro X Quick Hackathon Volunteering</figcaption>
+                  </figure>
+
+                  <!-- Photo 2 (Real repo event photo: aws/2.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/aws/2.jpg" 
+                        alt="AWS Cloud Workshop and Hands-on Student Architecture Lab" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">AWS BuildOvernights Kiro X Quick Hackathon Volunteering</figcaption>
+                  </figure>
+
+                  <!-- Photo 3 (Real repo event photo: aws/3.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/aws/3.jpg" 
+                        alt="AWS Community Day and Student Volunteering" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">AWS BuildOvernights Kiro X Quick Hackathon Volunteering</figcaption>
+                  </figure>
+
+                  <!-- Photo 4 (Real repo event photo: aws/4.jpg) -->
+                  <figure class="gallery-item">
+                    <div class="gallery-img-box">
+                      <img 
+                        src="assets/images/experience/aws/4.jpg" 
+                        alt="AWS Cloud Club Campus Tech Conference and Presentation" 
+                        class="gallery-img" 
+                        loading="lazy"
+                      >
+                    </div>
+                    <figcaption class="gallery-caption">AWS BuildOvernights Kiro X Quick Hackathon Volunteering</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------
+         SECTION 7: CONTACT (White with faint grid)
+         --------------------------------------------------------------------- -->
+    <section id="contact" class="section reveal-on-scroll" aria-labelledby="contact-heading">
+      <!-- Giant Ghost "LET'S WORK" watermark -->
+      <div class="contact-ghost-text" aria-hidden="true">LET'S WORK</div>
+
+      <div class="contact-layout">
+        <!-- Left Column: Headline, Subtitle & Pill Buttons -->
+        <div class="contact-left-col">
+          <h2 id="contact-heading" class="contact-headline">
+            Have a design challenge?<br>
+            <span class="contact-headline-line2">Let’s create a <span class="text-crimson">user-centered solution</span>.</span>
+          </h2>
+
+          <p class="contact-sub">
+            I am open to design collaborations and internship opportunities.
+          </p>
+
+          <div class="contact-actions-row">
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rhea.narag22@gmail.com&su=Collaboration%20%2F%20Project%20Inquiry%20%E2%80%94%20Rhea%20Narag%20Portfolio&body=Hi%20Rhea%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project%20%2F%20collaboration%20opportunity%20with%20you.%0A%0A%5BProject%20details%20%2F%20timeline%20%2F%20inquiries%5D%0A%0ALooking%20forward%20to%20hearing%20from%20you!%0A%0ABest%20regards%2C" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-hero contact-btn"
+              id="btn-work-with-me"
+              aria-label="Work With Me — open new email draft in Gmail to rhea.narag22@gmail.com"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              Work With Me
+            </a>
+
+            <a href="assets/resume/Rhea_Mae_Narag_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-hero btn-resume contact-btn" aria-label="View Rhea Mae Narag's Resume (opens in a new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+                <line x1="8" y1="17" x2="12" y2="17"></line>
+              </svg>
+              View Resume
+            </a>
+          </div>
+
+          <p class="contact-email-hint">
+            Prefer your default email app? <a href="mailto:rhea.narag22@gmail.com?subject=Collaboration%20%2F%20Project%20Inquiry%20%E2%80%94%20Rhea%20Narag%20Portfolio&body=Hi%20Rhea%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project%20%2F%20collaboration%20opportunity%20with%20you.%0A%0A%5BProject%20details%20%2F%20timeline%20%2F%20inquiries%5D%0A%0ALooking%20forward%20to%20hearing%20from%20you!%0A%0ABest%20regards%2C" class="contact-email-link" aria-label="Send direct email to rhea.narag22@gmail.com via default email client">Email directly (rhea.narag22@gmail.com)</a>
+          </p>
+        </div>
+
+        <!-- Right Column: Color Cutout Photo overlapping "WORK" -->
+        <div class="contact-photo-col">
+          <img 
+            src="assets/images/rhea-contact.png" 
+            alt="Portrait of Rhea Mae Narag" 
+            class="contact-photo"
+            width="640"
+            height="960"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (Full Bleed #201819)
+       ========================================================================= -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-left-content">
+        <span class="footer-tag">C O N T A C T</span>
+        <p class="footer-copyright">All Rights Reserved 2026 — Rhea Mae Narag</p>
+        <p class="footer-credit">Designed and Built by Rhea Mae Narag</p>
+      </div>
+
+      <!-- 3 Circular Beige Social Buttons (#E8E0DD) -->
+      <div class="footer-social-row">
+        <!-- Gmail "M" Icon -->
+        <a 
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=rhea.narag22@gmail.com&su=Collaboration%20%2F%20Project%20Inquiry%20%E2%80%94%20Rhea%20Narag%20Portfolio&body=Hi%20Rhea%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project%20%2F%20collaboration%20opportunity%20with%20you.%0A%0A%5BProject%20details%20%2F%20timeline%20%2F%20inquiries%5D%0A%0ALooking%20forward%20to%20hearing%20from%20you!%0A%0ABest%20regards%2C" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="social-circle-btn" 
+          id="footer-btn-gmail"
+          aria-label="Send email via Gmail to rhea.narag22@gmail.com" 
+          title="Send email via Gmail"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn "in" Icon -->
+        <a href="https://www.linkedin.com/in/rhea-mae-narag-192891393" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Visit LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+          </svg>
+        </a>
+
+        <!-- GitHub Icon -->
+        <a href="https://github.com/rheanarag" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Visit GitHub profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
