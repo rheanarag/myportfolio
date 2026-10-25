@@ -544,6 +544,13 @@ function initNavigation() {
         mobileToggle.focus();
       }
     });
+
+    // Close when resizing back to desktop width
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 991 && navLinksList.classList.contains('open')) {
+        closeNav();
+      }
+    }, { passive: true });
   }
 }
 
