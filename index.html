@@ -263,17 +263,17 @@
          SECTION 2: 01 / ABOUT ME
          --------------------------------------------------------------------- -->
     <section id="about" class="section reveal-on-scroll" aria-labelledby="about-heading">
-      <div class="section-heading-wrap">
-        <h2 id="about-heading" class="section-heading">
-          <span class="section-num">01</span>
-          <span class="slash">/</span>
-          <span class="section-title-text">ABOUT ME</span>
-        </h2>
-      </div>
-
       <div class="about-grid">
-        <!-- Left Column: Bio paragraphs + Frosted Stat Cards -->
+        <!-- Left Column: Heading + Bio paragraphs + Frosted Stat Cards -->
         <div class="about-text-col">
+          <div class="section-heading-wrap">
+            <h2 id="about-heading" class="section-heading">
+              <span class="section-num">01</span>
+              <span class="slash">/</span>
+              <span class="section-title-text">ABOUT ME</span>
+            </h2>
+          </div>
+
           <p class="about-p">
             I'm a Junior Information Technology student at the <span class="text-crimson">Polytechnic University of the Philippines</span> with a growing interest in frontend development and creating digital experiences that are both functional and easy to use.
           </p>
@@ -301,20 +301,20 @@
           </div>
         </div>
 
-        <!-- Right Column: Ghost "ISKOLAR" + B&W Cutout + 4 Callouts -->
+        <!-- Right Column: Framed Portrait + 4 Callouts -->
         <div class="about-visual-col">
-          <div class="about-ghost-text" aria-hidden="true">ISKOLAR</div>
-
           <!-- Photo Wrapper: Callouts and leader lines are anchored inside so they automatically follow the photo everywhere -->
           <div class="about-photo-wrapper">
-            <img 
-              src="assets/images/rhea-hero.png" 
-              alt="Grayscale portrait of Rhea Mae Narag" 
-              class="about-photo"
-              width="540"
-              height="720"
-              loading="lazy"
-            >
+            <div class="about-photo-frame">
+              <img 
+                src="assets/images/about-portrait.png" 
+                alt="Framed portrait of Rhea Mae Narag" 
+                class="about-photo"
+                width="900"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
 
             <!-- 1. BSIT (Upper Left) -->
             <div class="callout-group callout-bsit">
@@ -324,8 +324,8 @@
 
             <!-- 2. ISKOLAR NG BAYAN (Lower Left) -->
             <div class="callout-group callout-iskolar">
-              <svg class="callout-leader-line line-iskolar" viewBox="0 0 50 40" aria-hidden="true">
-                <line x1="4" y1="36" x2="46" y2="4"></line>
+              <svg class="callout-leader-line line-iskolar" viewBox="0 0 50 35" aria-hidden="true">
+                <line x1="4" y1="31" x2="46" y2="4"></line>
               </svg>
               <span class="callout-label">ISKOLAR NG<br>BAYAN</span>
             </div>
@@ -336,10 +336,10 @@
               <span class="callout-label">UI/UX<br>DESIGNER</span>
             </div>
 
-            <!-- 4. FRONTEND DEVELOPER (Bottom Right - Crimson) -->
+            <!-- 4. FRONTEND DEVELOPER (Bottom Right) -->
             <div class="callout-group callout-frontend">
-              <svg class="callout-leader-line line-frontend" viewBox="0 0 55 26" aria-hidden="true">
-                <line x1="4" y1="4" x2="51" y2="22"></line>
+              <svg class="callout-leader-line line-frontend" viewBox="0 0 50 35" aria-hidden="true">
+                <line x1="4" y1="4" x2="46" y2="31"></line>
               </svg>
               <span class="callout-label">FRONTEND<br>DEVELOPER</span>
             </div>
@@ -1505,18 +1505,18 @@
 
       <!-- 3 Circular Beige Social Buttons (#E8E0DD) -->
       <div class="footer-social-row">
-        <!-- Gmail "M" Icon -->
+        <!-- Facebook Icon -->
         <a 
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=rhea.narag22@gmail.com&su=Collaboration%20%2F%20Project%20Inquiry%20%E2%80%94%20Rhea%20Narag%20Portfolio&body=Hi%20Rhea%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project%20%2F%20collaboration%20opportunity%20with%20you.%0A%0A%5BProject%20details%20%2F%20timeline%20%2F%20inquiries%5D%0A%0ALooking%20forward%20to%20hearing%20from%20you!%0A%0ABest%20regards%2C" 
+          href="https://www.facebook.com/rhea.mae.narag.2024" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="social-circle-btn" 
-          id="footer-btn-gmail"
-          aria-label="Send email via Gmail to rhea.narag22@gmail.com" 
-          title="Send email via Gmail"
+          id="footer-btn-facebook"
+          aria-label="Visit Facebook profile" 
+          title="Facebook"
         >
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+          <svg viewBox="0 0 320 512" fill="currentColor">
+            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
           </svg>
         </a>
 
